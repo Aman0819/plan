@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Engineer (E1) Training Plan</title>
+<style>
+    :root {
+        --primary-color: #0052CC; /* Atlassian blue */
+        --secondary-color: #DEEBFF; /* light Atlassian blue */
+        --bg-color: #F4F5F7;
+        --text-color: #172B4D;
+    }
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        background: var(--bg-color);
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        background: var(--primary-color);
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .container {
+        display: flex;
+        min-height: 100vh;
+    }
+    nav {
+        width: 250px;
+        background: var(--primary-color);
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    nav h2 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 12px 0;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+    }
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    main {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .section {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+        color: var(--primary-color);
+    }
+    .highlight {
+        background: var(--secondary-color);
+        padding: 10px;
+        border-left: 4px solid var(--primary-color);
+        margin-bottom: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+    }
+    table th {
+        background: var(--secondary-color);
+        color: var(--text-color);
+    }
+    ul {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+    /* Responsive */
+    @media (max-width: 900px) {
+        .container {
+            flex-direction: column;
+        }
+        nav {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>🚀 DevOps Engineer (E1) Training Plan</header>
+
+<div class="container">
+<nav>
+    <h2>📘 Contents</h2>
+    <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#phase1">Phase 1 – Foundations</a></li>
+        <li><a href="#phase2">Phase 2 – Intermediate</a></li>
+        <li><a href="#phase3">Phase 3 – Advanced</a></li>
+        <li><a href="#phase4">Phase 4 – Validation</a></li>
+        <li><a href="#projects">Practice Ideas</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#skills">Skills Gained</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="overview" class="section">
+        <h2>📖 Overview</h2>
+        <div class="highlight">
+            <p><strong>⏳ Duration:</strong> 16 weeks (4 months)</p>
+            <p><strong>✅ Style:</strong> Progressive learning with hands-on practice</p>
+            <p><strong>🌐 Coverage:</strong> Linux, Git, Cloud, CI/CD, Terraform, Kubernetes, Observability, Security, Agile</p>
+            <p><strong>🏆 Outcome:</strong> Certifications (Azure AZ-104 & AWS SAA) + Capstone Project</p>
+        </div>
+    </section>
+
+    <section id="phase1" class="section">
+        <h2>📌 Phase 1 – Foundations (Weeks 1–4)</h2>
+        <p><strong>🎯 Goal:</strong> Build core skills in Linux, Git, scripting, and DevOps fundamentals.</p>
+        <table>
+            <thead>
+                <tr><th>📂 Category</th><th>📝 Details</th><th>📜 Description</th></tr>
+            </thead>
+            <tbody>
+    <tr><td>📖 Topic</td><td>DevOps Culture & SDLC - CI/CD concepts, immutable ...</td><td>DevOps Culture & SDLC - CI/CD concepts, immutable infra.</td></tr><tr><td>📖 Topic</td><td>Linux Administration - users, groups, permissions,...</td><td>Linux Administration - users, groups, permissions, logs, cron, networking.</td></tr><tr><td>📖 Topic</td><td>Git & Source Control - Gitflow, trunk-based, PR re...</td><td>Git & Source Control - Gitflow, trunk-based, PR reviews, rebasing, merging.</td></tr><tr><td>📖 Topic</td><td>Shell & PowerShell Scripting - bash loops, automat...</td><td>Shell & PowerShell Scripting - bash loops, automation, basic Windows tasks.</td></tr><tr><td>💻 Hands-on</td><td>Launch Ubuntu VM; manage users/groups; schedule lo...</td><td>Launch Ubuntu VM; manage users/groups; schedule log cleanup cron job.</td></tr><tr><td>💻 Hands-on</td><td>Create Git repo, feature branches, simulate PR flo...</td><td>Create Git repo, feature branches, simulate PR flow.</td></tr><tr><td>💻 Hands-on</td><td>Write bash scripts for backups and system monitori...</td><td>Write bash scripts for backups and system monitoring.</td></tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="phase2" class="section">
+        <h2>📌 Phase 2 – Intermediate DevOps (Weeks 5–8)</h2>
+        <p><strong>🎯 Goal:</strong> Gain proficiency in CI/CD, IaC, cloud platforms, and scripting.</p>
+        <table>
+            <thead>
+                <tr><th>📂 Category</th><th>📝 Details</th><th>📜 Description</th></tr>
+            </thead>
+            <tbody>
+    <tr><td>📖 Topic</td><td>Cloud Basics (AWS & Azure) - IAM roles, CLI tools,...</td><td>Cloud Basics (AWS & Azure) - IAM roles, CLI tools, EC2, S3, Azure VMs.</td></tr><tr><td>📖 Topic</td><td>CI/CD Pipelines - Jenkins, Azure DevOps YAML, GitH...</td><td>CI/CD Pipelines - Jenkins, Azure DevOps YAML, GitHub Actions.</td></tr><tr><td>📖 Topic</td><td>Python Automation - APIs, CLI tools, modular scrip...</td><td>Python Automation - APIs, CLI tools, modular scripts.</td></tr><tr><td>📖 Topic</td><td>Infrastructure as Code (IaC) - Terraform modules, ...</td><td>Infrastructure as Code (IaC) - Terraform modules, remote state, CloudFormation, ARM templates.</td></tr><tr><td>💻 Hands-on</td><td>Deploy static website on AWS S3 & Azure Storage....</td><td>Deploy static website on AWS S3 & Azure Storage.</td></tr><tr><td>💻 Hands-on</td><td>Implement Jenkins pipeline with notifications....</td><td>Implement Jenkins pipeline with notifications.</td></tr><tr><td>💻 Hands-on</td><td>Automate API tasks using Python script....</td><td>Automate API tasks using Python script.</td></tr><tr><td>💻 Hands-on</td><td>Construct reusable Terraform module for EC2 + S3 +...</td><td>Construct reusable Terraform module for EC2 + S3 + IAM setup.</td></tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="phase3" class="section">
+        <h2>📌 Phase 3 – Advanced DevOps (Weeks 9–12)</h2>
+        <p><strong>🎯 Goal:</strong> Master container orchestration, observability, security, testing, and incident management.</p>
+        <table>
+            <thead>
+                <tr><th>📂 Category</th><th>📝 Details</th><th>📜 Description</th></tr>
+            </thead>
+            <tbody>
+    <tr><td>📖 Topic</td><td>Docker & Kubernetes - Dockerfiles, multi-stage bui...</td><td>Docker & Kubernetes - Dockerfiles, multi-stage builds, Helm charts.</td></tr><tr><td>📖 Topic</td><td>Monitoring & Observability - CloudWatch, Prometheu...</td><td>Monitoring & Observability - CloudWatch, Prometheus, Grafana dashboards.</td></tr><tr><td>📖 Topic</td><td>Secrets & Security - Vault, AWS Secrets Manager, v...</td><td>Secrets & Security - Vault, AWS Secrets Manager, vulnerability scanning.</td></tr><tr><td>📖 Topic</td><td>Test Automation in CI/CD - integrate tests, report...</td><td>Test Automation in CI/CD - integrate tests, reports, coverage tools.</td></tr><tr><td>📖 Topic</td><td>Incident Management & Agile - RCA templates, Jira/...</td><td>Incident Management & Agile - RCA templates, Jira/Azure Boards.</td></tr><tr><td>💻 Hands-on</td><td>Containerize and deploy demo app on Kubernetes wit...</td><td>Containerize and deploy demo app on Kubernetes with Helm.</td></tr><tr><td>💻 Hands-on</td><td>Configure Prometheus + Grafana with custom dashboa...</td><td>Configure Prometheus + Grafana with custom dashboards & alerts.</td></tr><tr><td>💻 Hands-on</td><td>Securely store & retrieve secrets in pipeline....</td><td>Securely store & retrieve secrets in pipeline.</td></tr><tr><td>💻 Hands-on</td><td>Add CI/CD integration tests with coverage and repo...</td><td>Add CI/CD integration tests with coverage and reporting.</td></tr><tr><td>💻 Hands-on</td><td>Simulate outage & draft RCA....</td><td>Simulate outage & draft RCA.</td></tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="phase4" class="section">
+        <h2>📌 Phase 4 – Validation & Certification (Weeks 13–16)</h2>
+        <p><strong>🎯 Goal:</strong> Validate expertise through certification and real-world application.</p>
+        <table>
+            <thead>
+                <tr><th>📂 Category</th><th>📝 Details</th><th>📜 Description</th></tr>
+            </thead>
+            <tbody>
+    <tr><td>📖 Topic</td><td>Microsoft Azure Administrator (AZ-104)....</td><td>Microsoft Azure Administrator (AZ-104).</td></tr><tr><td>📖 Topic</td><td>AWS Certified Solutions Architect – Associate....</td><td>AWS Certified Solutions Architect – Associate.</td></tr><tr><td>📖 Topic</td><td>Capstone Project: Multi-cloud infra using Terrafor...</td><td>Capstone Project: Multi-cloud infra using Terraform + CI/CD + K8s + monitoring.</td></tr><tr><td>💻 Hands-on</td><td>Take practice certification exams (AZ-104 & AWS SA...</td><td>Take practice certification exams (AZ-104 & AWS SAA).</td></tr><tr><td>💻 Hands-on</td><td>Deploy end-to-end project covering IaC, CI/CD, sec...</td><td>Deploy end-to-end project covering IaC, CI/CD, secrets, K8s, monitoring.</td></tr>
+            </tbody>
+        </table>
+    </section>
+    
+<section id="projects" class="section">
+    <h2>🔁 End-to-End Practice Ideas</h2>
+    <table>
+        <thead><tr><th>🛠️ Project</th><th>📜 Description</th></tr></thead>
+        <tbody>
+<tr><td>CI/CD Pipeline</td><td>Build -> Test -> Dockerize -> Deploy to Kubernetes</td></tr><tr><td>Terraform Infra</td><td>Reusable Terraform modules for multi-environment infra</td></tr><tr><td>Monitoring Stack</td><td>Prometheus + Grafana with alerts & dashboards</td></tr><tr><td>Secrets Mgmt</td><td>Vault integration with CI/CD pipeline</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="timeline" class="section">
+    <h2>🗓️ Training Schedule</h2>
+    <table>
+        <thead><tr><th>📌 Phase</th><th>⏳ Duration</th><th>🎯 Focus Areas</th></tr></thead>
+        <tbody>
+<tr><td>Phase 1</td><td>Weeks 1-4</td><td>Core: Linux, Git, Scripting</td></tr><tr><td>Phase 2</td><td>Weeks 5-8</td><td>CI/CD, IaC, Cloud Basics, Python</td></tr><tr><td>Phase 3</td><td>Weeks 9-12</td><td>Kubernetes, Observability, Testing, Security</td></tr><tr><td>Phase 4</td><td>Weeks 13-16</td><td>Certifications & Capstone Project</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="skills" class="section">
+    <h2>🏅 Skills You'll Gain</h2>
+    <ul>
+        <li>🐧 Linux & Git mastery</li>
+        <li>⚙️ CI/CD pipelines with automated tests</li>
+        <li>☁️ Cloud automation (Terraform, CDK, CloudFormation)</li>
+        <li>📦 Kubernetes deployments & observability tools</li>
+        <li>🔐 Secure secrets management & vulnerability scanning</li>
+        <li>📊 Agile practices, incident response & RCA</li>
+        <li>🏆 Azure (AZ-104) & AWS Solutions Architect Associate certification readiness</li>
+    </ul>
+</section>
+</main>
+</div>
+</body>
+</html>
